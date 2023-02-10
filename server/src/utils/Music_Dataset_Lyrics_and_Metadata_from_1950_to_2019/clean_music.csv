@@ -1,0 +1,297 @@
+,artist_name,track_name,release_date,genre
+0,keyshia cole,fallin' out,2007,pop
+1,alicia keys,lesson learned (feat. john mayer),2007,pop
+2,troy,bet on it,2007,pop
+3,fall out boy,"this ain't a scene, it's an arms race",2007,pop
+4,kanye west,champion,2007,pop
+5,colbie caillat,realize,2007,pop
+6,kanye west,everything i am,2007,pop
+7,keyshia cole,i remember,2007,pop
+8,blue foundation,eyes on fire,2007,pop
+9,the-dream,i luv your girl,2007,pop
+10,maroon 5,wake up call,2007,pop
+11,lefty frizzell,lost love blues (rehearsal session),1951,country
+12,lefty frizzell,i'll try,1951,country
+13,lefty frizzell,all of me loves all of you,1951,country
+14,lester flatt,no mother in this world today,1951,country
+15,brownie mcghee,long gone,1951,country
+16,lefty frizzell,i know you're lonesome (while waiting for me),1951,country
+17,lefty frizzell,that's me without you,1951,country
+18,lester flatt,give me the flowers (while i'm living),1951,country
+19,lester flatt,gone home,1951,country
+20,lester flatt,i still miss someone,1951,country
+21,lefty frizzell,don't stay away (till love grows cold),1951,country
+22,lester flatt,who will sing for me?,1951,country
+23,lester flatt,he took your place,1951,country
+24,lefty frizzell,forever (and always),1951,country
+25,brownie mcghee,black snake moan,1951,country
+26,james otto,soldiers & jesus,2010,country
+27,josh abbott band,all of a sudden,2010,country
+28,lukas nelson and promise of the real,pali gap / hey baby (new rising sun),2010,country
+29,zac brown band,no hurry,2010,country
+30,zac brown band,colder weather (feat. little big town),2010,country
+31,zac brown band,martin,2010,country
+32,buck owens,together again,2010,country
+33,zac brown band,nothing,2010,country
+34,keith urban,all for you,2010,country
+35,easton corbin,a lot to learn about livin',2010,country
+36,ella fitzgerald,soon,1950,blues
+37,josh white,call me darling,1951,blues
+38,louis prima,the bigger the figure (with keely smith),1951,blues
+39,louis prima,one mint julep,1951,blues
+40,louis prima,eleanor,1951,blues
+41,louis prima,basta,1951,blues
+42,ella fitzgerald,you'll have to swing it (mr. paganini),1953,blues
+43,ella fitzgerald,it might as well be spring,1953,blues
+44,ella fitzgerald,thanks for the memory,1953,blues
+45,ella fitzgerald,"lover, come back to me",1953,blues
+46,ella fitzgerald,taking a chance on love,1953,blues
+47,ella fitzgerald,between the devil and the deep blue sea,1953,blues
+48,billie holiday,yesterdays,1953,blues
+49,billie holiday,i can't face the music,1953,blues
+50,billie holiday,remember,1953,blues
+51,ella fitzgerald,let yourself go,1958,blues
+52,woody guthrie,dance around,1958,blues
+53,ella fitzgerald,you keep coming back like a song,1958,blues
+54,ella fitzgerald,"top hat, white tie, and tails",1958,blues
+55,ella fitzgerald,i can't give you anything but love,1958,blues
+56,ella fitzgerald,sweet and lovely,1958,blues
+57,ella fitzgerald,i'm putting all my eggs in one basket,1958,blues
+58,big maybelle,pitiful,1958,blues
+59,woody guthrie,put your finger in the air,1958,blues
+60,jimmy reed,you're something else,1958,blues
+61,jimmy reed,go on to school,1958,blues
+62,ella fitzgerald,supper time,1958,blues
+63,ella fitzgerald,alexander's ragtime band,1958,blues
+64,ella fitzgerald,the song is ended,1958,blues
+65,dean martin,the money song,1950,jazz
+66,dean martin,i don't care if the sun don't shine,1950,jazz
+67,erroll garner,i don't know why (i just do),1950,jazz
+68,george shearing,i'll remember april,1950,jazz
+69,doris day,here in my arms,1950,jazz
+70,vic damone,an affair to remember,1950,jazz
+71,george shearing,conception,1950,jazz
+72,george shearing,september in the rain,1950,jazz
+73,george shearing,pick yourself up,1950,jazz
+74,doris day,oh me! oh my! oh you!,1950,jazz
+75,doris day,i know that you know,1950,jazz
+76,dean martin,muskrat ramble,1950,jazz
+77,dean martin,that certain party,1950,jazz
+78,dizzy gillespie,"love me, pretty baby",1951,jazz
+79,gerry mulligan,mulligan's too,1951,jazz
+80,dean martin,i ran all the way home,1951,jazz
+81,doris day,christmas story,1951,jazz
+82,doris day,you're getting to be a habit with me,1951,jazz
+83,bing crosby,santa claus is comin' to town,1951,jazz
+84,dean martin,sailors' polka,1951,jazz
+85,ray noble,love is the sweetest thing,1951,jazz
+86,stan kenton,yesterdays,1951,jazz
+87,dean martin,solitaire,1951,jazz
+88,doris day,moonlight bay,1951,jazz
+89,dean martin,if,1951,jazz
+90,thelonious monk,monk's mood,1951,jazz
+91,the andrews sisters,winter wonderland,1951,jazz
+92,dizzy gillespie,school days,1951,jazz
+93,dean martin,i'll always love you (day after day),1951,jazz
+94,dean martin,as you are,1952,jazz
+95,tony scott,it's you or no one,1953,jazz
+96,dizzy gillespie,swing low...sweet cadillac,1953,jazz
+97,buck clayton,jayhawk,1953,jazz
+98,tony bennett,winter wonderland,1953,jazz
+99,doris day,the christmas waltz,1953,jazz
+100,gerry mulligan,the nearness of you,1953,jazz
+101,oscar peterson,i was doing all right,1953,jazz
+102,oscar peterson,i've got you under my skin,1953,jazz
+103,sonny rollins,i know,1953,jazz
+104,erroll garner,lullaby of birdland,1953,jazz
+105,marian mcpartland,love is here to stay,1953,jazz
+106,louis armstrong,my bucket's got a hole in it,1989,jazz
+107,david benoit,cast your fate to the wind,1989,jazz
+108,jungle brothers,j. beez comin' through,1989,jazz
+109,quincy jones,i don't go for that,1989,jazz
+110,hiroshima,you and me,1989,jazz
+111,dave grusin,punta del soul,1989,jazz
+112,earl klugh,whisper and promises,1989,jazz
+113,hiroshima,the golden age,1989,jazz
+114,pestilence,out of the body,1989,jazz
+115,johnny mercer,candy,1989,jazz
+116,desmond dekker,unity,1967,reggae
+117,desmond dekker,rude boy train,1967,reggae
+118,the paragons,blackbird singing,1967,reggae
+119,desmond dekker,wiseman,1967,reggae
+120,phyllis dillon,don't stay away,1967,reggae
+121,the paragons,the first time i saw you,1967,reggae
+122,the gaylads,she want it,1967,reggae
+123,phyllis dillon,don't touch me tomato,1967,reggae
+124,alton ellis,why,1967,reggae
+125,phyllis dillon,perfidia,1967,reggae
+126,alton ellis,breaking up,1968,reggae
+127,alton ellis,willow tree,1968,reggae
+128,the heptones,in love with you,1968,reggae
+129,alton ellis,i can't stand it,1968,reggae
+130,the tennors,i want everything,1968,reggae
+131,the tennors,ride your donkey,1968,reggae
+132,tommy mccook,what the world needs now is love,1968,reggae
+133,the uniques,out of love (i'm the one love forgot),1968,reggae
+134,phyllis dillon,love is all i had,1968,reggae
+135,joya landis,angel of the morning,1968,reggae
+136,joya landis,moonlight lover,1968,reggae
+137,prince buster,rough rider,1968,reggae
+138,peter tosh,equal rights,1968,reggae
+139,elvis presley,love me,1956,rock
+140,elvis presley,ready teddy,1956,rock
+141,elvis presley,i'm counting on you,1956,rock
+142,gene vincent & his blue caps,i flipped,1956,rock
+143,gene vincent & his blue caps,jezebel,1956,rock
+144,gene vincent & his blue caps,"jumps, giggles and shouts",1956,rock
+145,bill haley & his comets,"hot dog, buddy, buddy",1956,rock
+146,gene vincent & his blue caps,ain't she sweet,1956,rock
+147,ray campi,the crossing,1957,rock
+148,ray campi,you can't catch me,1957,rock
+149,ray campi,i didn't mean to be mean,1957,rock
+150,ray campi,it ain't me,1957,rock
+151,ray campi,give that love to me,1957,rock
+152,ray campi,loretta,1957,rock
+153,the everly brothers,when will i be loved,1957,rock
+154,frankie laine,that ain't right,1957,rock
+155,the platters,don't forget,1957,rock
+156,the platters,o promise me,1957,rock
+157,the platters,time and tide,1957,rock
+158,the platters,darktown strutter's ball,1957,rock
+159,frankie laine,rockin' chair,1957,rock
+160,elvis presley,i'll be home for christmas,1957,rock
+161,elvis presley,blueberry hill,1957,rock
+162,elvis presley,happy ending,1963,rock
+163,elvis presley,cotton candy land,1963,rock
+164,the kingston trio,try to remember,1963,rock
+165,barbra streisand,happy days are here again,1963,rock
+166,elvis presley,fame and fortune,1963,rock
+167,elvis presley,surrender,1963,rock
+168,the beatles,not a second time,1963,rock
+169,the beatles,all i've got to do,1963,rock
+170,the beatles,you really got a hold on me,1963,rock
+171,the beatles,till there was you,1963,rock
+172,the beatles,all my loving,1963,rock
+173,the beatles,devil in her heart,1963,rock
+174,the beatles,a taste of honey,1963,rock
+175,the beatles,hold me tight,1963,rock
+176,elvis presley,it's now or never,1963,rock
+177,the beatles,p.s. i love you,1963,rock
+178,the beatles,please mister postman,1963,rock
+179,elvis presley,fun in acapulco,1963,rock
+180,elvis presley,i feel so bad,1963,rock
+181,elvis presley,roustabout,1964,rock
+182,mavis staples,i have learned to do without you,1970,rock
+183,david bowie,the width of a circle,1970,rock
+184,the velvet underground,who loves the sun,1970,rock
+185,the velvet underground,sweet jane,1970,rock
+186,chicago,colour my world,1970,rock
+187,pink floyd,fat old sun,1970,rock
+188,led zeppelin,tangerine,1970,rock
+189,bee gees,lonely days,1970,rock
+190,chicago,make me smile,1970,rock
+191,george harrison,art of dying,1970,rock
+192,george harrison,isn't it a pity,1970,rock
+193,creedence clearwater revival,travelin' band,1970,rock
+194,yusuf / cat stevens,wild world,1970,rock
+195,creedence clearwater revival,born to move,1970,rock
+196,carpenters,i'll never fall in love again,1970,rock
+197,rodríguez,jane s. piddy,1970,rock
+198,paul mccartney,the lovely linda,1970,rock
+199,creedence clearwater revival,sailor's lament,1970,rock
+200,chester bennington,system,2002,rock
+201,the union underground,across the nation,2002,rock
+202,eddie vedder,you've got to hide your love away,2002,rock
+203,pearl jam,i am mine,2002,rock
+204,seether,gasoline,2002,rock
+205,insane clown posse,juggalo homies,2002,rock
+206,chevelle,forfeit,2002,rock
+207,korn,alone i break,2002,rock
+208,system of a down,f**k the system,2002,rock
+209,system of a down,mr. jack,2002,rock
+210,system of a down,chic 'n' stu,2002,rock
+211,seether,broken,2002,rock
+212,sly & the family stone,thank you (falettinme be mice elf agin),2002,rock
+213,red hot chili peppers,throw away your television,2002,rock
+214,trapt,still frame,2002,rock
+215,skillet,savior,2003,rock
+216,heather victoria,not taking you back (feat. rapsody),2011,hip hop
+217,killah priest,black august (dark),2011,hip hop
+218,killah priest,come with me,2011,hip hop
+219,killah priest,musifixtion,2011,hip hop
+220,killah priest,when i'm writing,2011,hip hop
+221,killah priest,do the damn thing,2011,hip hop
+222,killah priest,time,2011,hip hop
+223,epmd,danger zone,2011,hip hop
+224,shyheim,21st century crisis,2011,hip hop
+225,killah priest,deja vu,2011,hip hop
+226,killah priest,breathe,2011,hip hop
+227,killah priest,robbery,2011,hip hop
+228,rayess bek,soukout remix,2011,hip hop
+229,rayess bek,halon remix,2011,hip hop
+230,abstract artform,hip-hop is what i was doing (feat. flo soul & dj platform),2011,hip hop
+231,goin' through,the showcase (i vitrina),2012,hip hop
+232,lil wayne,spitter,2014,hip hop
+233,black moon,powaful impak!,2014,hip hop
+234,radioinactive,left handed cigarettes,2014,hip hop
+235,zulú hip hop jam,hoy,2014,hip hop
+236,smif-n-wessun,stand strong,2014,hip hop
+237,zulú hip hop jam,mil hojas,2014,hip hop
+238,krs-one,"big up new york (feat. black moon, smif-n-wessun, mad lion, funkmaster flex)",2014,hip hop
+239,armand hammer,the rent is too damn high,2014,hip hop
+240,kwest tha madd lad,718,2014,hip hop
+241,styles p,rude boy hip hop (feat. raheem devaughn),2014,hip hop
+242,fat joe,lean back,2014,hip hop
+243,statik selektah,all the way (pimp hop),2014,hip hop
+244,goldlink,hip hop interlude,2014,hip hop
+245,abhi the nomad,sneaker juice,2014,hip hop
+246,big l,stretch and bobbito show '95,2014,hip hop
+247,zulú hip hop jam,cossa nostra,2014,hip hop
+248,the cross movement,cry no more,2014,hip hop
+249,black moon,u da man feat. mad lion & smif-n-wessun,2014,hip hop
+250,shyne,the hit,2018,hip hop
+251,busta rhymes,the whole world looking at me,2018,hip hop
+252,mc lyte,lyte thee mc,2018,hip hop
+253,grandmaster flash,style (peter gunn theme),2018,hip hop
+254,ultramagnetic mc's,"ego trippin' (12"" version)",2018,hip hop
+255,mc lyte,i go on,2018,hip hop
+256,ol' dirty bastard,rawhide,2018,hip hop
+257,v.i.c.,"bop, bop, bop",2018,hip hop
+258,black$tar,get it (remix),2018,hip hop
+259,lil' flip,real hip hop,2018,hip hop
+260,talib kweli,listen!!!,2018,hip hop
+261,talib kweli,ny weather report,2018,hip hop
+262,loon,relax your mind,2018,hip hop
+263,loon,you don't know,2018,hip hop
+264,loon,this aint funny,2018,hip hop
+265,the lox,i wanna thank you,2018,hip hop
+266,leaders of the new school,what's next,2018,hip hop
+267,leaders of the new school,teachers don't teach us nonsense,2018,hip hop
+268,hiphop tamizha,vaadi nee vaa,2018,hip hop
+269,black rob,smile in ya face,2018,hip hop
+270,nappy roots,sick & tired,2019,hip hop
+271,aaliyah,more than a woman,2019,hip hop
+272,will smith,men in black,2019,hip hop
+273,denzel curry,gook,2019,hip hop
+274,french montana,marble floors,2019,hip hop
+275,kurtis blow,basketball,2019,hip hop
+276,mos def,"sex, love & money",2019,hip hop
+277,cassidy,a.m. to p.m.,2019,hip hop
+278,eric b. & rakim,paid in full,2019,hip hop
+279,t-pain,look at her go (feat. chris brown),2019,hip hop
+280,$uicideboy$,you're now tuning into 66.6 fm with dj rapture (the hottest hour of the evening),2019,hip hop
+281,ghostface killah,iron maiden,2019,hip hop
+282,q-tip,life is better,2019,hip hop
+283,future,tony montana,2019,hip hop
+284,nappy roots,blowin' trees,2019,hip hop
+285,eazy-e,eazy-duz-it,2019,hip hop
+286,rakim,when i b on tha mic,2019,hip hop
+287,ja rule,kill 'em all,2019,hip hop
+288,nipsey hussle,hussle in the house,2019,hip hop
+289,nappy roots,country boyz,2019,hip hop
+290,the roots,the seed (2.0),2019,hip hop
+291,mack 10,10 million ways,2019,hip hop
+292,m.o.p.,ante up (robbin hoodz theory),2019,hip hop
+293,nine,whutcha want?,2019,hip hop
+294,will smith,switch,2019,hip hop
+295,jeezy,r.i.p.,2019,hip hop
