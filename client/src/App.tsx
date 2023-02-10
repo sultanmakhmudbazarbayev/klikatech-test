@@ -81,24 +81,6 @@ export const App: React.FC = () => {
             Search
           </Button>
           <Button
-            onClick={() => clearFilters && handleReset(clearFilters)}
-            size="small"
-            style={{ width: 90 }}
-          >
-            Reset
-          </Button>
-          <Button
-            type="link"
-            size="small"
-            onClick={() => {
-              confirm({ closeDropdown: false });
-              setSearchText((selectedKeys as string[])[0]);
-              setSearchedColumn(dataIndex);
-            }}
-          >
-            Filter
-          </Button>
-          <Button
             type="link"
             size="small"
             onClick={() => {
@@ -136,11 +118,6 @@ export const App: React.FC = () => {
       ),
   });
 
-  const handleReset = (clearFilters: () => void) => {
-    clearFilters();
-    setSearchText('');
-  };
-
   const { data: genres } = useQuery([], () =>
     musicAPI.getGenres().then((res) => res.data)
   );
@@ -170,7 +147,7 @@ export const App: React.FC = () => {
     },
   ];
 
-  const { data, isLoading } = useQuery([tableParams, searchText], () =>
+  const { data, isLoading } = useQuery([tableParams], () =>
     musicAPI
       .getMusic({
         pagination: {
@@ -178,12 +155,13 @@ export const App: React.FC = () => {
           limit: tableParams.pagination?.pageSize,
         },
         filter: {
-          song_name: searchedColumn === 'song_name' ? searchText : undefined,
+          song: (tableParams.filters?.['song']?.[0] as string) || undefined,
           artist_name:
-            searchedColumn === 'artist.artist_name' ? searchText : undefined,
-          year: searchedColumn === 'year' ? searchText : undefined,
+            (tableParams.filters?.['artist.artist_name']?.[0] as string) ||
+            undefined,
+          year: (tableParams.filters?.['year']?.[0] as string) || undefined,
           genre_id:
-            (tableParams.filters?.['genre.genre'][0] as string) || undefined,
+            (tableParams.filters?.['genre.genre']?.[0] as string) || undefined,
         },
       })
       .then((res) => {
@@ -210,6 +188,7 @@ export const App: React.FC = () => {
         <Typography.Title>Music</Typography.Title>
         <Table
           rowKey={(record) => record.id}
+          bordered
           loading={isLoading}
           columns={columns}
           dataSource={data?.data}

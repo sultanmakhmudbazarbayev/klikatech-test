@@ -11,7 +11,7 @@ exports.getMusic = tryCatch(async (req, res) => {
     genre_id: req.query.genre_id ?? -1,
     artist_name: req.query.artist_name ?? -1,
     year: req.query.year ?? -1,
-    song_name: req.query.song_name ?? -1,
+    song_name: req.query.song ?? -1,
   };
 
   const songs = await service.getMusic(pagination, filter);

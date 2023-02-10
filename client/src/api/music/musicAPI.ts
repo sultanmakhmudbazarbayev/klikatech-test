@@ -8,7 +8,7 @@ const getMusic = (params?: {
     genre_id?: string;
     artist_name?: string;
     year?: string;
-    song_name?: string;
+    song?: string;
   };
 }) => {
   return axiosClient.get<{ count: number; data: Music[] }>('/music', {
@@ -16,7 +16,7 @@ const getMusic = (params?: {
       limit: params?.pagination?.limit,
       offset: params?.pagination?.offset,
       genre_id: params?.filter?.genre_id || undefined,
-      song_name: params?.filter?.song_name || undefined,
+      song: params?.filter?.song || undefined,
       artist_name: params?.filter?.artist_name || undefined,
       year: params?.filter?.year || undefined,
     },
