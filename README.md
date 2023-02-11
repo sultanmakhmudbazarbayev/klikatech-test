@@ -3,31 +3,6 @@
   <h3 align="center">Test Project For Klika Tech</h3>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
@@ -39,7 +14,8 @@ Backend and fronted were done within 15-16 hours. I aknowledge lack of experienc
 
 Here's why:
 
-- There are configuration files for Docker images, and I tried to configure docker-compose, but errors were coming one after another, and I stopped when it come to local network management between containers.
+- There are configuration files for Docker images, and I tried to configure docker-compose with migrations and seeders, but errors were coming one after another, and I stopped when it come to errors related to migrations. It took me around 4-5 hours to figure out that migrations were running before api were connected to database.
+- Next problem is seeders, I coudn't find a possible version of running seeders inside a docker so container will always restart properly.
 - Filtration part of backend was also done in a hurry.
 - I was looking for music datasets and some time were spent to formatting of csv file.
 - Here will be instructions of downloading and setting up the project.
@@ -48,7 +24,9 @@ Here's why:
 
 ### Prerequisites
 
-You must have Postgresql, Nodejs installed on your local computer. You may need create new user, database and grant all privilliges for database to corresponding user.
+There are 2 ways to run this project: "docker compose up" and manually setup. Firstly manual setup will be explaned below.
+
+if you want to setup manually, you must have Postgresql, Nodejs installed on your local computer. You may need create new user, database and grant all privilliges for database to corresponding user.
 
 Here is example how you can do it on Linux/Ubuntu:
 
@@ -146,6 +124,40 @@ genre_id - id of already existing genre in database
 artist_name - any string
 year - integer desired, but string also works
 song - any string
+
+## Using docker compose
+
+If you want to use "docker compose up" there are 3 steps to do it, but before ensure that **Postgresql service is stopped and port 5432 has no running processes**.
+
+1. After clonning the repo run:
+
+   ```
+   cd klikatech-test && docker compose up
+   ```
+
+   It will run all three containers correctly, but when adding seeders to database container api will be exited, because of "restart:no"
+   It would've restarted trying to seed database again and receive errors.
+
+   So it's best to exit all containers by CTRL+C or corresponding combination on your laptop, or to write docker compose down _without deleting pgdb_data folder_
+
+2. Before second attempt to restart you should comment "command" on api image:
+
+   Comment following lines in docker-compose.yml:
+
+   ```
+    27  #  command: >
+    28  #    sh -c "npm run migrate:prod &&
+    29  #       PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205736-add-artists.js &&
+    30  #       PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205814-add-genres.js &&
+    31  #       PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205820-add-songs.js"
+   ```
+
+3. Run docker compose again:
+   ```
+    docker compose up
+   ```
+
+And You should be able to see my work in http://localhost:3000
 
 ## Contact
 
