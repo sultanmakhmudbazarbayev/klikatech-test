@@ -5,10 +5,10 @@
 FROM node:19.6.0
 
 # Setting the working directory in the container, where all commands should be executed
-WORKDIR /server
+WORKDIR /client
 
 # First copy package.json so npm install won't be executed every time image rebiulds itself
-COPY . /server
+COPY . /client
 
 
 # By default all commands will be executed in the working directory of a container, which is the root folder.
@@ -23,12 +23,12 @@ RUN npm install
 
 
 # Expose port that is inside of the container to a local machine
-EXPOSE 3001
+EXPOSE 3000
 
 # Command should be written in the end of a Dockerfile
 # Command will be executed when container is started based on the image
 # It is a final container-layer which becomes active once we run an image as a layer
-CMD ["npm", "run", "start:prod"]
+CMD ["npm", "run", "start"]
 
 
 

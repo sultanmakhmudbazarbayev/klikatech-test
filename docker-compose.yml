@@ -1,0 +1,76 @@
+version: '3.8'
+services:
+  database:
+    image: postgres:14.5
+    container_name: database
+    restart: always
+    volumes:
+      - ./pgdb_data:/data/db
+    networks:
+      - postgres-net
+    environment:
+      - POSTGRES_USER=klika
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=klikatech
+
+  # After first docker-compose up, container should be restarted with 'command' commented
+  api:
+    container_name: api
+    restart: 'no'
+    build: ./server
+    ports:
+      - '3001:3001'
+    networks:
+      - postgres-net
+    depends_on:
+      - database
+    command: >
+      sh -c "npm run migrate:prod &&
+             PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205736-add-artists.js &&
+             PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205814-add-genres.js &&
+             PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205820-add-songs.js"
+    environment:
+      - PG_USER=klika
+      - PG_DATABASE=klikatech
+      - PG_PASSWORD=password
+      - PG_HOST=database
+
+  client:
+    container_name: client
+    restart: always
+    build: ./client
+    ports:
+      - '3000:3000'
+    depends_on:
+      - api
+    environment:
+      - REACT_APP_BASE_URL=http://localhost:3001
+# All named volumes should be stored as below on the same level with services to ensure docker-compose that they exist
+# Several volumes in different containers can share the same volume below if they have similar names
+volumes:
+  pgdata:
+
+networks:
+  postgres-net:
+    name: postgres-net
+# RUN npm run migrate:prod
+# RUN PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205736-add-artists.js
+# RUN PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205814-add-genres.js
+# RUN PG_PASSWORD=password PG_USER=klika PG_DATABASE=klikatech npx sequelize-cli db:seed --seed 20230209205820-add-songs.js
+# TO START DOCKER_COMPOSE:
+# docker-compose up           - in attached mode(blocking terminal)
+# docker-compose up -d        - in detached mode(blocking terminal)
+
+# TO REMOVE ALL THE SERVICES(CONTAINERS AND IMAGES), but doesnot delete volumes automatically:
+# docker-compose down
+# docker-compose down -v      - to remove data-volumes too
+
+# env_file:
+#   - ./.env.dev
+#   # docker-compose automatically creates a new network for all the services(containers) and assign the to it
+#   # networks:
+#     # - networkName
+
+#   build:
+#     context: ./backend
+#     dockerfile: Dockerfile      # in case if Dockerfile is named differently
