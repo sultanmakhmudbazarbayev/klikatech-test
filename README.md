@@ -87,12 +87,6 @@ _Below there are instructions of how to run project._
    /// Otherwise it will be connected to backend hosted by server
    ```
 
-6. After that you should be able to run backend part of the project:
-
-   ```js
-   /// And see project on the sorresponding url.
-   npm run start:prod
-   ```
 
 ## Additional info
 
